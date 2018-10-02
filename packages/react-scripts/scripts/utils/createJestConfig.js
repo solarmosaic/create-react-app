@@ -31,6 +31,7 @@ module.exports = (resolve, rootDir, isEjecting) => {
     testEnvironment: 'jsdom',
     testURL: 'http://localhost',
     transform: {
+      '\\.(gql|graphql)$': '<rootDir>/node_modules/jest-transform-graphql',
       '^.+\\.(js|jsx)$': isEjecting
         ? '<rootDir>/node_modules/babel-jest'
         : resolve('config/jest/babelTransform.js'),
