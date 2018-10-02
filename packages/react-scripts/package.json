@@ -1,6 +1,6 @@
 {
   "name": "cypress-dot-io-attribute-removal-react-scripts",
-  "version": "2.0.1-graphql.1",
+  "version": "2.0.1-graphql.2",
   "description": "Configuration and scripts for Create React App, including removal of test attributes like data-test.",
   "repository": "colinyoung/create-react-app",
   "license": "MIT",
