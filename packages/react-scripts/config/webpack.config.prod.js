@@ -319,7 +319,7 @@ module.exports = {
                         },
                       },
                     ],
-                    isE2E && [
+                    !isE2E && [
                       require.resolve('babel-plugin-react-remove-properties'),
                       {
                         properties: ['data-cy', 'data-test', 'data-testid'],
