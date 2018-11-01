@@ -36,7 +36,10 @@ const shouldUseSourceMap = process.env.GENERATE_SOURCEMAP !== 'false';
 const publicUrl = publicPath.slice(0, -1);
 // Get environment variables to inject into our app.
 const env = getClientEnvironment(publicUrl);
-const isE2E = Boolean(env.stringified['process.env'].REACT_APP_E2E);
+const envVars = env.stringified['process.env'];
+const REACT_APP_E2E = env.stringified['process.env'].REACT_APP_E2E;
+const isE2E =
+  Object.keys(envVars).includes('REACT_APP_E2E') && REACT_APP_E2E !== '""';
 if (isE2E) {
   console.log('REACT_APP_E2E is defined. Will not strip Cypress attributes.');
 }
