@@ -14,5 +14,10 @@
       "tag: internal": ":house: Internal"
     },
     "cacheDir": ".changelog"
+  },
+  "command": {
+    "publish": {
+      "npmClient": "npm"
+    }
   }
 }
