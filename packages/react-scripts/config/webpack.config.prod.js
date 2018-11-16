@@ -515,6 +515,7 @@ module.exports = {
       exclude: [/\.map$/, /asset-manifest\.json$/],
       importWorkboxFrom: 'local',
       navigateFallback: publicUrl + '/index.html',
+      skipWaiting: true,
       navigateFallbackBlacklist: [
         // Exclude URLs starting with /_, as they're likely an API call
         new RegExp('^/_'),
